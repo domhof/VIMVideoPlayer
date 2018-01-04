@@ -113,12 +113,12 @@ static void *VideoPlayer_PlayerItemLoadedTimeRangesContext = &VideoPlayer_Player
         NSLog(@"Error setting audio session category: %@", categoryError);
     }
     
-    NSError *activeError = nil;
-    success = [[AVAudioSession sharedInstance] setActive:YES error:&activeError];
-    if (!success)
-    {
-        NSLog(@"Error setting audio session active: %@", activeError);
-    }
+//    NSError *activeError = nil;
+//    success = [[AVAudioSession sharedInstance] setActive:YES error:&activeError];
+//    if (!success)
+//    {
+//        NSLog(@"Error setting audio session active: %@", activeError);
+//    }
 }
 
 #pragma mark - Public API
